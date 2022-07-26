@@ -25,3 +25,16 @@ Lancer l'app :
 ```
 npx react-native run-android
 ```
+
+## Ajouter des modules
+
+```
+module.exports = {
+  presets: ['module:metro-react-native-babel-preset'],
+  env: {
+    production: {
+      plugins: ['react-native-paper/babel'],
+    },
+  },
+};
+```
