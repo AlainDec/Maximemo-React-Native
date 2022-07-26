@@ -49,8 +49,12 @@ module.exports = {
 
 ```
 npm install @react-navigation/native @react-navigation/native-stack
+npm install react-native-screens react-native-safe-area-context
+npm install @react-navigation/drawer
+npm install react-native-gesture-handler react-native-reanimated
 npm install --save react-native-vector-icons
 ```
+Ne pas installer @react-navigation/stack qui est moins rapide que native-stack et qui est développé en JS  
 Choisir une icône : https://ionic.io/ionicons ou encore pour plus de choix : https://oblador.github.io/react-native-vector-icons/
 
 ### Gestion des formulaires avec React Hook Form
