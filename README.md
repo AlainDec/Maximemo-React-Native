@@ -74,22 +74,22 @@ npm i @react-native-picker/picker
 ```
 
 ### Gérer les données via le SGBD Realm : https://realm.io/  
-doc : https://www.mongodb.com/docs/realm/tutorial/?_ga=2.233929880.725042621.1655800794-244169423.1655800794
-doc de base à suivre : https://www.mongodb.com/docs/realm/sdk/react-native/
-doc 3 : https://github.com/realm/realm-js
-doc 4 : https://github.com/realm/realm-js/tree/master/packages/realm-react#readme
-Les exemples sur lesquels je me suis appuyé: https://aboutreact.com/example-of-realm-database-in-react-native/
+doc : https://www.mongodb.com/docs/realm/tutorial/?_ga=2.233929880.725042621.1655800794-244169423.1655800794  
+doc de base à suivre : https://www.mongodb.com/docs/realm/sdk/react-native/  
+doc 3 : https://github.com/realm/realm-js  
+doc 4 : https://github.com/realm/realm-js/tree/master/packages/realm-react#readme  
+Les exemples sur lesquels je me suis appuyé: https://aboutreact.com/example-of-realm-database-in-react-native/  
 ```
 npm install realm @realm/react
 ```
 
-Attention, à l'utilisation de Realm, l'asynchronisation de Await nécessite de modifier tsconfig.json :
-"target": "esnext",
-"module": "commonjs",
+Attention, à l'utilisation de Realm, l'asynchronisation de Await nécessite de modifier tsconfig.json :  
+"target": "esnext",  
+"module": "commonjs",  
 
-deviennent :
-"target": "es2017",
-"module": "es2022",
+deviennent :  
+"target": "es2017",  
+"module": "es2022",  
 
 ### Utiliser la librairie Moment pour les dates, et timetone pour les convertion tz
 ```
