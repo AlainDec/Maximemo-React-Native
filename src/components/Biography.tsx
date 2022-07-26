@@ -1,4 +1,5 @@
 import { ScrollView, Text, StyleSheet } from 'react-native';
+import React from 'react';
 
 const Biography = () => {
     return (
