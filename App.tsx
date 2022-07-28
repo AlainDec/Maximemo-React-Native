@@ -5,32 +5,19 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 //import { createStackNavigator } from '@react-navigation/stack';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Biography from './src/components/Biography';
-import Personnage from './src/components/Personnage';
-import AdaLovelace from './src/components/AdaLovelace';
-
-function HomeScreen({ navigation }: any) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Button
-        title="Biographie de Ada Lovelace"
-        onPress={() => navigation.navigate('Ada LOVELACE')}
-      />
-    </View>
-  );
-}
+import StoreScreen from './src/screens/StoreScreen';
+import Rubrics from './src/screens/RubricsScreen';
+import HomeMemosScreen from './src/screens/HomeMemosScreen';
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
 
 function Root() {
-  // <Drawer.Navigator useLegacyImplementation>
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="Home" component={HomeScreen} options={{drawerItemStyle: {display: 'none'}}} />
-      <Drawer.Screen name="Ada LOVELACE" component={AdaLovelace} />
-      <Drawer.Screen name="Personnage" component={Personnage} />
-      <Drawer.Screen name="Biographie" component={Biography} />
+      <Drawer.Screen name="Mémos" component={HomeMemosScreen} /*options={{drawerItemStyle: {display: 'none'}}}*/ />
+      <Drawer.Screen name="Gérer les rubriques" component={Rubrics} />
+      <Drawer.Screen name="Sauvegarde" component={StoreScreen} />
     </Drawer.Navigator>
   );
 }
@@ -43,7 +30,7 @@ export default function App() {
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="Root" component={Root} options={{headerShown: false}} />
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Mémos" component={HomeMemosScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

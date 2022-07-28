@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
 
-const Personnage = () => {
+const RubricsScreen = () => {
     return (
         <View style={styles.text}>
             <Text>Ada Lovelace, de son nom complet Augusta Ada King, comtesse de 
@@ -12,7 +12,7 @@ pionnière de la science informatique.</Text>
     );
 }
 
-export default Personnage;
+export default RubricsScreen;
 
 const styles = StyleSheet.create({
     text: {

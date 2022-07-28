@@ -1,10 +1,14 @@
-import { ScrollView, Text, StyleSheet } from 'react-native';
+import { ScrollView, Text, StyleSheet, Button } from 'react-native';
 import React from 'react';
 
-const Biography = () => {
+const StoreScreen = ({ navigation }: any) => {
     return (
         <ScrollView>
             <Text style={styles.text}>
+            <Button 
+                    onPress={() => navigation.navigate('Mémos')}
+                    title="retour vers l'accueil"
+                />
             Ada était la seule fille légitime du poète George Gordon Byron et de 
 son épouse Annabella Milbanke, une femme intelligente et cultivée, 
 cousine de Caroline Lamb, dont la liaison avec Byron fut à l'origine 
@@ -70,7 +74,7 @@ promotion.
     );
 }
 
-export default Biography;
+export default StoreScreen;
 
 const styles = StyleSheet.create({
     text: {

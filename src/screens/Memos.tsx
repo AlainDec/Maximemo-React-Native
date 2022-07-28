@@ -1,11 +1,11 @@
 import { Image, View, Text, StyleSheet, Button } from 'react-native';
 import React from 'react';
 
-const AdaLovelace = ({ navigation }: any) => {
+const Memos = ({ navigation }: any) => {
     return (
         <View style={styles.container}>
             <Image 
-                source={require('./ada-lovelace.png')}
+                source={require('./assets/ada-lovelace.png')}
                 style={styles.image}
             />
             <View>
@@ -19,7 +19,7 @@ const AdaLovelace = ({ navigation }: any) => {
     );
 }
 
-export default AdaLovelace;
+export default Memos;
 
 const styles = StyleSheet.create({
     container: {
