@@ -32,7 +32,10 @@ npx react-native run-android
 ## Ajouter des modules
 
 ### React Native Paper
-
+Pour la gestion du FAB, l'icône bas droite déployable  
+```
+npm install react-native-paper
+```
 Ajouter dans babel.config.js  
 ```
 module.exports = {
@@ -54,6 +57,9 @@ npm install @react-navigation/drawer
 npm install react-native-gesture-handler react-native-reanimated
 npm install --save react-native-vector-icons
 ```
+Editer le fichier android/app/build.gradle (MAIS PAS android/build.gradle) et ajouter en bas :  
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"  
+
 Ne pas installer @react-navigation/stack qui est moins rapide que native-stack et qui est développé en JS  
 Choisir une icône : https://ionic.io/ionicons ou encore pour plus de choix : https://oblador.github.io/react-native-vector-icons/
 
