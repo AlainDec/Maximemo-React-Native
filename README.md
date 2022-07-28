@@ -32,7 +32,10 @@ npx react-native run-android
 ## Ajouter des modules
 
 ### React Native Paper
-
+Pour la gestion du FAB, l'icône bas droite déployable  
+```
+npm install react-native-paper
+```
 Ajouter dans babel.config.js  
 ```
 module.exports = {
